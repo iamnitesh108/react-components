@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import data from "./data";
-import "./styles.css";
+import styles from "./accordion.module.css"
 
 const Accordion = () => {
   const [selected, setSelected] = useState(null);
@@ -22,15 +22,15 @@ const Accordion = () => {
   }
 
   return (
-    <div className="wrapper">
+    <div className={styles.wrapper}>
       <button onClick={() => setEnableMultiSelect(!enableMultiSelect)}>
         {enableMultiSelect ? "Disable Multiselection" : "Enable Multiselection"}
       </button>
-      <div className="accordion">
+      <div className={styles.accordion}>
         {data.map((dataItem) => (
-          <section key={dataItem.id} className="item">
+          <section key={dataItem.id} className={styles.item} >
             <header
-              className="title"
+              className={styles.title}
               onClick={() =>
                 enableMultiSelect
                   ? handleMultipleClick(dataItem.id)

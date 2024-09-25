@@ -1,10 +1,6 @@
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
+
+/* /////////////////////////////////////// */
 .wrapper {
   min-height: 100vh;
   display: flex;
@@ -13,7 +9,13 @@
   flex-direction: column;
 }
 .wrapper button{
-  
+  padding: 10px 20px;
+  color: black;
+  background: #b8d8fa;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
 }
 .accordion {
   width: 90vw;
