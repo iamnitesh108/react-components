@@ -255,3 +255,11 @@ main {
 .color-type h1, h2 {
    text-transform: uppercase;
 }
+
+.active {
+  color: #FFD700;
+}
+
+.inactive {
+  color: #000000;
+}

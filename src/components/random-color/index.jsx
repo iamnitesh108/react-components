@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import styles from "./random-color.module.css";
+
 console.log(`${styles.btn} ${styles['btn-hipster']}`)
+
 // className={`${styles.btn} ${styles['btn-hipster']}`}
+
 const RandomColor = () => {
   const [typeOfColor, setTypeOfColor] = useState("hex");
   const [color, setColor] = useState("#573800");
